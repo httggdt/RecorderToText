@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Recorder.js demo with record, stop and pause - addpipe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <div>
+      <span>请选择音频的sampleRate(采样率)的赫兹大小:</span>
+      <select name="recRate" id="recRate">
+        <option value="8000">8000</option>
+        <option value="16000">16000</option>
+        <option value="44100">44100</option>
+        <option value="48000">48000</option>
+      </select>
+    </div>
+    <div class="recordBox">
+      <a href="javascript:;" id="recordButton" class="stop"><img src="./recording.png" alt=""></a>
+      <a href="javascript:;" id="stopButton" class=""><img src="./recording.png" alt=""></a>
+      <input type="text" id="recordTxt" placeholder="请按语音键录音">
+      <a href="javascript:;" class="refresh"><img src="./refresh.png" alt=""></a>
+      <p class="errorTips" class=""></p>
+    </div>
+
+    <!-- <div id="controls">
+  	 <button id="pauseButton" disabled>Pause</button>
+  	 <button id="stopButton" disabled>Stop</button>
+    </div> -->
+
+  	<!-- <p><strong>Recordings:</strong></p> -->
+    <ol id="recordingsList"></ol>
+    
+
+  	<!-- <p><strong>Transform:</strong></p>
+    <div id="transTxtBox"></div> -->
+
+    <script src="js/jquery1.7.js"></script>
+    <script src="js/recorder.js"></script>
+  	<script src="js/app.js"></script>
+  </body>
+</html>
